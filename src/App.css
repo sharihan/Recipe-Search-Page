@@ -1,0 +1,123 @@
+:root {
+  --black: #151515;
+  --blue: #2452cc;
+  --green: #39613b;
+  --gray: #4b5567;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2em;
+  margin: 0;
+  padding-top: 2em;
+  color: var(--black);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.SearchBar {
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 20px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  align-items: center;
+
+}
+
+button {
+  padding: 20px;
+  background-color: #495568;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #39613b;
+}
+
+.RecipesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.RecipeCard {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: left;
+  /* max-width: 300px; */
+}
+
+.RecipeCard img {
+  /* width: 100%; */
+  height: auto;
+  border-radius: 4px;
+}
+
+ h3 {
+  font-family: sans-serif;
+  color: #333;
+}
+
+.RecipeCard p {
+  font-family: sans-serif;
+  color: #4b5567;
+}
+
+.RecipeInfo {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PrepTime {
+  background-color: #2452cc;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.CookTime {
+  background-color: #39613b;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
